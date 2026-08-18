@@ -1,8 +1,3 @@
----
-name: MSDS Translator
-description: Translates Chinese MSDS documents into professional English following the SUN-NOA standardized 16-section GHS MSDS template.
----
-
 # MSDS Translator
 
 ## Purpose
