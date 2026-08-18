@@ -1,4 +1,16 @@
-# SAFETY DATA SHEET (Template)
+# MSDS Template
+
+## HEADER (repeating on every page)
+- Left: "Product Name: [Product Name]"
+- Left: "Supplier: Beijing SUN-NOA Technology Development Co., Ltd."
+- Right: "Date of issue: [Date]"
+- Right: "Date of revision: [Date]"
+- Right: "Page [X]"
+
+## FOOTER (repeating on every page)
+- [Optional: company website or confidentiality note]
+
+---
 
 SAFETY DATA SHEET
 [PRODUCT NAME]
