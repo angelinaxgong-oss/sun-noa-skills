@@ -48,10 +48,18 @@ Translate Chinese MSDS (Material Safety Data Sheet) documents into professional 
 - Do NOT add content that is not in the source document
 - Translate faithfully — do not interpret or embellish
 - Flag any missing or uncertain data with [bracketed placeholders]
-- If the source has fewer than 16 sections, fill missing sections with standard text:
-  - Section XIV (Transport): "Not classified as dangerous goods."
-  - Section XV (Regulatory): "Not classified as hazardous chemical according to applicable regulations."
-  - Section XII (Ecological): "No data available."
+
+## Section Completion Rules (for each section, in order of priority)
+1. If the source PROVIDES content for a section → translate it faithfully and use it
+2. If the source does NOT have that section, or it is empty → use the default fallback text
+3. Never overwrite source content with default text
+
+## Default Fallback Text (ONLY when source is missing/empty)
+- Section XII (Ecological): "No data available."
+- Section XIV (Transport): "Not classified as dangerous goods."
+- Section XV (Regulatory): "Not classified as hazardous chemical according to applicable regulations."
+
+## Company Name Rules
 - If a company name appears that is not SUN-NOA (e.g., an OEM manufacturer), remove the company name and any sentence containing it entirely — do NOT translate it, do NOT flag it
 - Only SUN-NOA company information should appear in the final document
 
