@@ -1,6 +1,6 @@
 ---
 name: Product Listing Generator
-description: Generates ready-to-paste B2B product listings (title, description, features, specs) in a consistent professional format for platforms like TradeWheel, Made-in-China, Alibaba, and our own website.
+description: Generates ready-to-paste B2B product listings in a consistent professional format.
 ---
 
 # Product Listing Generator
@@ -23,7 +23,6 @@ Ask the user (or use available data) for these fields:
 ## Output Format (Always follow this structure)
 
 ### 1. Product Title (1 line, keyword-rich, max ~15 words)
-Example: "Two-Component EPI Wood Adhesive – D4 Compliant, Formaldehyde-Free, for Solid Wood Edge/Face Gluing"
 
 ### 2. Product Overview (2-3 sentences, what it is + main benefit)
 
@@ -41,9 +40,9 @@ Example: "Two-Component EPI Wood Adhesive – D4 Compliant, Formaldehyde-Free, f
 
 ## Style Rules
 - Concise, descriptive, professional tone.
-- No exaggerated marketing language ("amazing", "incredible", "best").
+- No exaggerated marketing language.
 - Use accurate industry terminology.
-- Consistent spelling: use "optimization" (US) unless told otherwise.
+- Consistent spelling.
 - Clear, scannable formatting.
 - Highlight certifications.
 
