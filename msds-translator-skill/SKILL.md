@@ -37,7 +37,8 @@ Translate Chinese MSDS (Material Safety Data Sheet) documents into professional 
 - Translate faithfully — do not interpret or embellish
 - Flag any missing or uncertain data with [bracketed placeholders]
 - If the source has fewer than 16 sections, fill missing sections with standard text or placeholders
-- If a company name appears that is not SUN-NOA, flag it with a note to confirm
+- If a company name appears that is not SUN-NOA (e.g., an OEM manufacturer), remove the company name and any sentence containing it entirely — do NOT translate it, do NOT flag it
+- Only SUN-NOA company information should appear in the final document
 
 ## Style Rules
 - Professional, concise, descriptive tone
