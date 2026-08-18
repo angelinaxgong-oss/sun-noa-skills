@@ -50,3 +50,12 @@ Translate Chinese MSDS (Material Safety Data Sheet) documents into professional 
 ## Template Reference
 - Use templates/MSDS-template.md as the output structure
 - Use glossary.md for standardized terminology
+
+## Format Rules
+- Always apply the formatting defined in format-spec.md when generating .docx output
+- Default font: Arial 10.5pt body
+- Title: Arial 21.5pt bold centered
+- Product name: Arial 15.5pt bold centered
+- Header: 2-column table (Product Name / Date of issue, Supplier / Date of revision)
+- Footer: page number, 9pt, right-aligned
+- Composition/Physical tables: Helvetica Neue 9.5pt, no borders
