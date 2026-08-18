@@ -1,30 +1,30 @@
 ---
-name: Product Listing Generator
-description: Generates B2B product listings.
+name: product-listing-generator
+description: Generates ready-to-paste B2B product listings in a consistent professional format for platforms like TradeWheel, Made-in-China, Alibaba, and the company website. Use when the user asks to create a product listing from product details such as model, category, features, specifications, applications, packaging, and certifications.
 ---
 
 # Product Listing Generator
 
 ## Purpose
-Generate standardized, professional B2B product listings from a product's basic information, matching SUN-NOA's company tone.
+Generate standardized, professional B2B product listings from a product's basic information, matching SUN-NOA's company tone (concise, descriptive, professional, not salesy).
 
 ## Required Inputs
 1. Product name / model number
-2. Product category
-3. Key features
-4. Specifications
-5. Applications
+2. Product category (EPI, PVAc, EVA Hot Melt, PUR, MS Polymer, Silicone, Epoxy, etc.)
+3. Key features (bond strength, water resistance, curing, open time, etc.)
+4. Specifications (viscosity, solids content, pH, specific gravity, application temp, etc.)
+5. Applications / end-use
 6. Packaging
-7. Certifications
+7. Certifications (D4, JAS, EAC, REACH, SGS, etc.)
 8. MOQ, price (if provided)
-9. Target platform
+9. Target platform (TradeWheel, Made-in-China, Alibaba, website)
 
 ## Output Format
 1. Product Title (1 line, keyword-rich, max ~15 words)
-2. Product Overview (2-3 sentences)
-3. Key Features (bullet points, 5-8 items)
-4. Applications (bullet points)
-5. Specifications Table
+2. Product Overview (2-3 sentences, what it is + main benefit)
+3. Key Features (bullet points, 5-8 items, start with action/benefit words)
+4. Applications (bullet points, concise)
+5. Specifications Table (model | spec | description)
 6. Certifications (line)
 7. Packaging (line)
 8. Additional Fields (MOQ, Price, Port, Payment, HS Code)
@@ -38,4 +38,4 @@ Generate standardized, professional B2B product listings from a product's basic 
 - Highlight certifications.
 
 ## Note
-If any required information is missing, insert [bracketed placeholders].
+If any required information is missing, insert [bracketed placeholders] so the user can fill them in.
