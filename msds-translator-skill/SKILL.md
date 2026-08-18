@@ -1,9 +1,14 @@
+---
+name: MSDS Translator
+description: Translates Chinese MSDS into English.
+---
+
 # MSDS Translator
 
 ## Purpose
-Translate Chinese MSDS (Material Safety Data Sheet) documents into professional English, outputting them in the SUN-NOA standardized 16-section GHS format.
+Translate Chinese MSDS documents into professional English following the SUN-NOA standardized 16-section GHS format.
 
-## Input Required
+## Required Inputs
 - A Chinese MSDS document (Word, PDF, or pasted text)
 
 ## Process
