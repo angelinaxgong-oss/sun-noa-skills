@@ -16,7 +16,8 @@ Translate Chinese MSDS (Material Safety Data Sheet) documents into professional 
 2. Translate section by section into English
 3. Map the content into the 16-section GHS template (see templates/MSDS-template.md)
 4. Apply consistent industry terminology (see glossary.md)
-5. Flag any missing or uncertain data with [bracketed placeholders]
+5. Apply formatting (see format-spec.md)
+6. Flag any missing or uncertain data with [bracketed placeholders]
 
 ## Output Format
 - Follow the structure in templates/MSDS-template.md exactly
@@ -24,6 +25,17 @@ Translate Chinese MSDS (Material Safety Data Sheet) documents into professional 
 - Fill in product-specific data for each section
 - Use [brackets] for any information not provided in the source document
 - Follow Standard GHS section order: Section II = Hazards Identification, Section III = Information on Composition
+
+## Format Rules
+- Always apply the formatting defined in format-spec.md when generating .docx output
+- Default font: Arial 10.5pt
+- Line spacing: 1.5 (w:line=360)
+- Title: Arial 21.5pt bold centered
+- Product name: Arial 15.5pt bold centered
+- Section headings: Arial 15.5pt bold
+- Header: 2-column table (Product Name / Date of issue, Supplier / Date of revision)
+- Footer: page number, 9pt, right-aligned
+- Empty line between sections
 
 ## Terminology Rules
 - Always refer to glossary.md for standardized terminology
@@ -36,7 +48,10 @@ Translate Chinese MSDS (Material Safety Data Sheet) documents into professional 
 - Do NOT add content that is not in the source document
 - Translate faithfully — do not interpret or embellish
 - Flag any missing or uncertain data with [bracketed placeholders]
-- If the source has fewer than 16 sections, fill missing sections with standard text or placeholders
+- If the source has fewer than 16 sections, fill missing sections with standard text:
+  - Section XIV (Transport): "Not classified as dangerous goods."
+  - Section XV (Regulatory): "Not classified as hazardous chemical according to applicable regulations."
+  - Section XII (Ecological): "No data available."
 - If a company name appears that is not SUN-NOA (e.g., an OEM manufacturer), remove the company name and any sentence containing it entirely — do NOT translate it, do NOT flag it
 - Only SUN-NOA company information should appear in the final document
 
@@ -47,15 +62,7 @@ Translate Chinese MSDS (Material Safety Data Sheet) documents into professional 
 - No literal word-for-word translation
 - Highlight certifications and hazard information clearly
 
-## Template Reference
-- Use templates/MSDS-template.md as the output structure
-- Use glossary.md for standardized terminology
-
-## Format Rules
-- Always apply the formatting defined in format-spec.md when generating .docx output
-- Default font: Arial 10.5pt body
-- Title: Arial 21.5pt bold centered
-- Product name: Arial 15.5pt bold centered
-- Header: 2-column table (Product Name / Date of issue, Supplier / Date of revision)
-- Footer: page number, 9pt, right-aligned
-- Composition/Physical tables: Helvetica Neue 9.5pt, no borders
+## File References
+- templates/MSDS-template.md — the 16-section output structure
+- glossary.md — standardized terminology
+- format-spec.md — exact docx formatting (font, size, spacing, header/footer)
