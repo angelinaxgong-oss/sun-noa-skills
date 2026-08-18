@@ -1,8 +1,3 @@
----
-name: Product Listing Generator
-description: Generates ready-to-paste B2B product listings in a consistent professional format.
----
-
 # Product Listing Generator
 
 ## Purpose
