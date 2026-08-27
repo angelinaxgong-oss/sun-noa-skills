@@ -1,14 +1,13 @@
 # TDS Template (English)
 
 ## Header (repeating on every page)
-Technical Data Sheet
-Beijing SUN-NOA Technology Development Co., Ltd.
-Tel: +86-10-85365010 | Add: Room 504, Building 2, Tuqiao PLUS Cultural and Creative Industrial Park, Tongzhou District, Beijing, China
-[Date] | page 1 of 1 page
+Beijing SUN-NOA Technology Development Co.,Ltd.
+Tel: +86-10-85365010 Add：Room 504, Building 2, Tuqiao PLUS  Tongzhou District, Beijing China
 
 ---
 
-[Product Name]
+Technical Data Sheet        ← Centred and bolded
+[Product Name]              ← Centred and bolded
 
 Application
 [Application description]
