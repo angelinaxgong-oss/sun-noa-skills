@@ -17,36 +17,37 @@ This file defines the EXACT formatting for generated English TDS Word documents.
 - Table cells: w:line=300
 
 ## 4. Header (repeating on every page)
-- ONLY two lines:
+- ONLY two lines, both centered:
   - Line 1: "Beijing SUN-NOA Technology Development Co.,Ltd."
   - Line 2: "Tel: +86-10-85365010 Add：Room 504, Building 2, Tuqiao PLUS  Tongzhou District, Beijing China"
 - Font: 9pt (sz=18)
 - No title, no date, no page number in the header
 
 ## 5. Footer (repeating on every page)
-- Optional: company logo image (left-aligned)
-- Page number (right-aligned, 9pt)
-- Font: 9pt (sz=18)
+- Page number (right-aligned, 9pt, sz=18)
+- No company logo
 
 ## 6. Title Block (body, at the very top)
 - Line 1: "Technical Data Sheet" — bold, CENTERED, 14pt (sz=28)
 - Line 2: [Product Name] — bold, CENTERED, 15.5pt (sz=31)
 - Both lines centered (w:jc="center")
-- Spacing before title: 92; spacing between title and product name: 92
+- Spacing before title: 120; spacing before product name: 92
 
 ## 7. Section Headings ("Application", "Characteristics", etc.)
 - Font: Arial, 15.5pt (sz=31), bold
 - Spacing before: 93
+- Left indent: 21
 
 ## 8. Body Text
 - Font: Arial, 10.5pt (sz=21)
 - Spacing before: 52
 - Left indent: 29
 
-## 9. Tables (Technical Specification)
+## 9. Tables (Technical Specification / Application Techniques)
 - Font: Helvetica Neue, 9.5pt (sz=19)
 - Borders: none
 - Header row: not bold
 
-## 10. Disclaimer (bottom)
+## 10. Disclaimer (bottom of body)
 - Font: Arial, 9pt (sz=18)
+- Spacing before: 120
