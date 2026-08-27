@@ -38,25 +38,34 @@ If the user requests both, produce both versions.
 6. Cleaning / 清洁
 7. Shelf Life / 保质期 — ALWAYS leave blank for manual input
 8. Packaging / 包装 — ALWAYS leave blank for manual input
-9. Disclaimer / 免责声明
+9. Disclaimer / 免责声明 — placed at the BOTTOM of the body
 
 ## Company Information (fixed)
 English:
-- Company Name: Beijing SUN-NOA Technology Development Co., Ltd.
-- Address: Room 504, Building 2, Tuqiao PLUS Cultural and Creative Industrial Park, Tongzhou District, Beijing, China
-- Phone: +86-10-85365010
+- Company Name: Beijing SUN-NOA Technology Development Co.,Ltd.
+- Tel/Add: Tel: +86-10-85365010 Add：Room 504, Building 2, Tuqiao PLUS  Tongzhou District, Beijing China
 
 Chinese (中文):
 - 公司名称：北京圣诺亚科技发展有限公司
-- 地址：北京市通州区土桥PLUS文创产业园2号楼504室
-- 电话：+86-10-85365010
+- 电话/地址：电话：+86-10-85365010 地址：北京市通州区土桥PLUS文创产业园2号楼504室
+
+## Format Rules
+- Always apply the formatting defined in the relevant format-spec file:
+  - EN output: format-spec.md (font Arial 10.5pt)
+  - CN output: format-spec-cn.md (font 宋体 SimSun 10.5pt, 西文 Times New Roman)
+- Title block (CENTERED): "Technical Data Sheet" / "技术数据表" (14pt bold) above the product name (15.5pt bold)
+- Header: ONLY two centered lines (company name + Tel/Add), 9pt
+- Footer: page number, right-aligned, 9pt
+- Line spacing: 1.5 (w:line=360)
+- Empty line between sections
 
 ## Content Rules
 - Do NOT add content that is not in the source document
 - Translate faithfully — do not interpret or embellish
 - Flag any missing or uncertain data with [bracketed placeholders]
-- Shelf Life and Packaging must ALWAYS be left blank (with [To be completed] placeholder) for manual input
+- Shelf Life and Packaging must ALWAYS be left blank (with [To be completed] / [待填写] placeholder) for manual input
 - If any other company name appears (e.g., OEM manufacturer), remove it entirely
+- Only SUN-NOA company information should appear in the final document
 
 ## Terminology Rules
 - Always refer to glossary.md for standardized terminology
