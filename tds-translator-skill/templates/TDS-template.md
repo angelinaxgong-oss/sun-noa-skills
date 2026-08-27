@@ -1,4 +1,4 @@
-# TDS Template (English)
+# EVA TDS Template (English)
 
 ## Header (repeating on every page)
 Beijing SUN-NOA Technology Development Co.,Ltd.
@@ -6,29 +6,39 @@ Tel: +86-10-85365010 Add：Room 504, Building 2, Tuqiao PLUS  Tongzhou District,
 
 ---
 
-Technical Data Sheet        ← Centred and bolded
-[Product Name]              ← Centred and bolded
+Technical Data Sheet        ← centered bold (14pt)
+[Product Name]              ← centered bold (15.5pt)
 
 Application
-[Application description]
+[Application description — e.g., edge banding, soft forming]
 
 Characteristics
-[Key features/characteristics]
+[Key features — e.g., high initial tack, good heat resistance, no stringing]
 
 Technical Specification
+> Omit any row whose value is not provided in the source document.
 | Parameter | Value |
 |---|---|
-| [Parameter 1] | [Value] |
-| [Parameter 2] | [Value] |
+| Appearance | [Value] |
+| Melt Viscosity (Brookfield, @200°C) | [Value] |
+| Softening Point (Ring & Ball) | [Value] |
+| Density | [Value] |
 
-Application Techniques
-[Application/processing parameters]
+Application Parameters
+> Omit any row whose value is not provided in the source document.
+| Parameter | Value |
+|---|---|
+| Material moisture content | [Value] |
+| Ambient temperature | [Value] |
+| Material temperature | [Value] |
+| Glue tank temperature | [Value] |
+| Glue roller temperature | [Value] |
+| Press roller pressure | [Value] |
+| Feed speed | [Value] |
+| Application amount | [Value] |
 
-Remark
-[Remark text]
-
-Cleaning
-[Cleaning instructions]
+Precautions
+[Usage instructions, safety, storage from the source]
 
 Shelf Life
 [To be completed]
