@@ -6,42 +6,67 @@ description: Translates Chinese MSDS documents into professional English followi
 # MSDS Translator
 
 ## Purpose
-Translate Chinese MSDS (Material Safety Data Sheet) documents into professional English, outputting them in the SUN-NOA standardized 16-section GHS format.
+Translate Chinese MSDS (Material Safety Data Sheet) documents into professional English, outputting them in the SUN-NOA standardized 16-section GHS format. Also supports producing a standardized Chinese (CN) version.
 
 ## Required Inputs
 - A Chinese MSDS document (Word, PDF, or pasted text)
 
 ## Process
 1. Extract all text from the Chinese MSDS
-2. Translate section by section into English
-3. Map the content into the 16-section GHS template (see templates/MSDS-template.md)
+2. Translate section by section into English (or format into Chinese for CN output)
+3. Map the content into the 16-section GHS template
 4. Apply consistent industry terminology (see glossary.md)
-5. Apply formatting (see format-spec.md)
+5. Apply formatting (see format-spec.md / format-spec-cn.md)
 6. Flag any missing or uncertain data with [bracketed placeholders]
 
+## Output Language
+This skill supports TWO output modes:
+1. **Chinese (CN)** — output follows templates/MSDS-template-cn.md and format-spec-cn.md
+2. **English (EN)** — output follows templates/MSDS-template.md and format-spec.md
+
+When the user requests a Chinese output, use the CN template and CN format-spec.
+When the user requests an English output, use the EN template and EN format-spec.
+If the user requests both, produce both versions.
+
 ## Output Format
-- Follow the structure in templates/MSDS-template.md exactly
-- Keep the fixed company information (SUN-NOA details) as-is
+- Follow the 16-section GHS structure exactly (EN or CN as requested)
+- Keep the fixed company information as-is (see Company Information below)
 - Fill in product-specific data for each section
 - Use [brackets] for any information not provided in the source document
 - Follow Standard GHS section order: Section II = Hazards Identification, Section III = Information on Composition
 
+## Company Information (fixed)
+English:
+- Company Name: Beijing SUN-NOA Technology Development Co., Ltd.
+- Address: Room 504, Building 2, Tuqiao PLUS Cultural and Creative Industrial Park, Tongzhou District, Beijing, China
+- Phone: +86-10-85365010
+- Fax: +86-10-85365010
+- Emergency Contact: +86-10-85365010 / +86-13910612601
+
+Chinese (中文):
+- 公司名称：北京圣诺亚科技发展有限公司
+- 地址：北京市通州区土桥PLUS文创产业园2号楼504室
+- 电话：+86-10-85365010
+- 传真：+86-10-85365010
+- 应急电话：+86-10-85365010 / +86-13910612601
+
 ## Format Rules
-- Always apply the formatting defined in format-spec.md when generating .docx output
-- Default font: Arial 10.5pt
+- Always apply the formatting defined in the relevant format-spec file:
+  - EN output: format-spec.md (font Arial 10.5pt)
+  - CN output: format-spec-cn.md (font 宋体 SimSun 10.5pt, 西文 Times New Roman)
 - Line spacing: 1.5 (w:line=360)
-- Title: Arial 21.5pt bold centered
-- Product name: Arial 15.5pt bold centered
-- Section headings: Arial 15.5pt bold
+- Title: 21.5pt bold centered
+- Product name: 15.5pt bold centered
+- Section headings: 15.5pt bold
 - Header: 2-column table (Product Name / Date of issue, Supplier / Date of revision)
 - Footer: page number, 9pt, right-aligned
 - Empty line between sections
 
 ## Terminology Rules
 - Always refer to glossary.md for standardized terminology
-- Use "Not available" for 无数据 (not "No data")
-- Use "Boiling point" for 沸点
-- Use "Dry powder" for 干粉
+- Use "Not available" (EN) / "无数据" (CN) for 无数据
+- Use "Boiling point" (EN) / "沸点" (CN) for 沸点
+- Use "Dry powder" (EN) / "干粉" (CN) for 干粉
 - If a term is not in the glossary, translate it literally and flag it with a note to review
 
 ## Content Rules
@@ -55,22 +80,26 @@ Translate Chinese MSDS (Material Safety Data Sheet) documents into professional 
 3. Never overwrite source content with default text
 
 ## Default Fallback Text (ONLY when source is missing/empty)
-- Section XII (Ecological): "No data available."
-- Section XIV (Transport): "Not classified as dangerous goods."
-- Section XV (Regulatory): "Not classified as hazardous chemical according to applicable regulations."
+- Section XII (Ecological / 生态学信息): "No data available." / "无有关数据"
+- Section XIV (Transport / 运输信息): "Not classified as dangerous goods." / "非危险货物"
+- Section XV (Regulatory / 法规信息): "Not classified as hazardous chemical according to applicable regulations." / "根据适用法规，不属于危险化学品"
 
 ## Company Name Rules
-- If a company name appears that is not SUN-NOA (e.g., an OEM manufacturer), remove the company name and any sentence containing it entirely — do NOT translate it, do NOT flag it
-- Only SUN-NOA company information should appear in the final document
+- The only company names that may appear are:
+  - English: Beijing SUN-NOA Technology Development Co., Ltd.
+  - Chinese: 北京圣诺亚科技发展有限公司
+- If any other company name appears (e.g., an OEM manufacturer), remove the company name and any sentence containing it entirely — do NOT translate it, do NOT flag it
 
 ## Style Rules
 - Professional, concise, descriptive tone
 - Accurate industry terminology
-- Consistent spelling (US English)
+- Consistent spelling (US English for EN output)
 - No literal word-for-word translation
 - Highlight certifications and hazard information clearly
 
 ## File References
-- templates/MSDS-template.md — the 16-section output structure
-- glossary.md — standardized terminology
-- format-spec.md — exact docx formatting (font, size, spacing, header/footer)
+- templates/MSDS-template.md — English 16-section structure
+- templates/MSDS-template-cn.md — Chinese 16-section structure
+- glossary.md — standardized CN↔EN terminology
+- format-spec.md — English docx formatting
+- format-spec-cn.md — Chinese docx formatting
